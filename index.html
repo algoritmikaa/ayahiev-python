@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритмика Грозный — Международная школа программирования для детей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Анимированный фон -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="bg-glow bg-glow--2"></div>
+    <div class="bg-glow bg-glow--3"></div>
+
+    <!-- Навигация -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo__icon">◆</span>
+                <span class="logo__text">АЛГОРИТМИКА</span>
+            </a>
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__link">О школе</a></li>
+                <li><a href="#courses" class="nav__link">Курсы</a></li>
+                <li><a href="#why" class="nav__link">Почему мы</a></li>
+                <li><a href="#contacts" class="nav__link nav__link--cta">Записаться</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    Международная школа · Грозный
+                </div>
+                <h1 class="hero__title">
+                    Программирование<br>
+                    <span class="hero__title-accent">для будущего</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Учим детей 6–18 лет программированию, математике и цифровым навыкам.
+                    Интерактивная платформа, проектный подход, реальные результаты.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contacts" class="btn btn--primary">
+                        <span>Записаться на пробный урок</span>
+                        <span class="btn__arrow">→</span>
+                    </a>
+                    <a href="#courses" class="btn btn--ghost">Наши курсы</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__num" data-count="1100000">0</span>
+                        <span class="stat__label">выпускников</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="90">0</span>
+                        <span class="stat__label">стран</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num" data-count="450">0</span>
+                        <span class="stat__label">городов</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="orb orb--main"></div>
+                <div class="orb orb--ring"></div>
+                <div class="code-window">
+                    <div class="code-window__bar">
+                        <span class="code-window__dot code-window__dot--red"></span>
+                        <span class="code-window__dot code-window__dot--yellow"></span>
+                        <span class="code-window__dot code-window__dot--green"></span>
+                        <span class="code-window__title">future.py</span>
+                    </div>
+                    <pre class="code-window__code"><code><span class="code-keyword">class</span> <span class="code-class">Future</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self, child):
+        self.child = child
+        self.skills = []
+
+    <span class="code-keyword">def</span> <span class="code-func">learn</span>(self):
+        <span class="code-keyword">while</span> self.child.curious:
+            self.skills.append(<span class="code-string">"coding"</span>)
+            self.skills.append(<span class="code-string">"logic"</span>)
+            self.child.grow()
+
+        <span class="code-keyword">return</span> <span class="code-string">"🚀 Ready for IT"</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О школе -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__tag">01 — О школе</span>
+                <h2 class="section__title">Не просто школа.<br>Экосистема развития.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <div class="about-card__icon">🧠</div>
+                    <h3>Алгоритмическое мышление</h3>
+                    <p>Учим детей разбивать сложные задачи на простые шаги и находить эффективные решения.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-card__icon">💻</div>
+                    <h3>Реальные проекты</h3>
+                    <p>Каждый ученик создаёт игры, сайты, приложения и ботов — от идеи до готового продукта.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-card__icon">🌍</div>
+                    <h3>Международный стандарт</h3>
+                    <p>Программы «Алгоритмики» работают в 90+ странах и соответствуют ФГОС.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-card__icon">⚡</div>
+                    <h3>Интерактивная платформа</h3>
+                    <p>Собственная образовательная среда с геймификацией и мгновенной обратной связью.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Курсы -->
+    <section class="section section--alt" id="courses">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__tag">02 — Курсы</span>
+                <h2 class="section__title">Выбери свой путь<br>в IT</h2>
+            </div>
+            <div class="courses-grid">
+                <article class="course-card glass">
+                    <div class="course-card__age">6–7 лет</div>
+                    <h3 class="course-card__title">Основы логики<br>и программирования</h3>
+                    <p class="course-card__desc">Первые шаги в алгоритмике через игры, мультфильмы и творческие задачи.</p>
+                    <ul class="course-card__list">
+                        <li>Логические игры</li>
+                        <li>Scratch Jr</li>
+                        <li>Командная работа</li>
+                    </ul>
+                    <div class="course-card__glow"></div>
+                </article>
+                <article class="course-card glass">
+                    <div class="course-card__age">7–9 лет</div>
+                    <h3 class="course-card__title">Компьютерная<br>грамотность</h3>
+                    <p class="course-card__desc">Устройство ПК, безопасный интернет, алгоритмы и первые программы.</p>
+                    <ul class="course-card__list">
+                        <li>Scratch</li>
+                        <li>Алгоритмы</li>
+                        <li>Кибербезопасность</li>
+                    </ul>
+                    <div class="course-card__glow"></div>
+                </article>
+                <article class="course-card glass course-card--featured">
+                    <div class="course-card__badge">Популярно</div>
+                    <div class="course-card__age">10–14 лет</div>
+                    <h3 class="course-card__title">Python<br>разработка</h3>
+                    <p class="course-card__desc">От основ синтаксиса до создания реальных приложений и игр.</p>
+                    <ul class="course-card__list">
+                        <li>Python</li>
+                        <li>Telegram-боты</li>
+                        <li>Игровые проекты</li>
+                    </ul>
+                    <div class="course-card__glow"></div>
+                </article>
+                <article class="course-card glass">
+                    <div class="course-card__age">12–17 лет</div>
+                    <h3 class="course-card__title">Frontend<br>разработка</h3>
+                    <p class="course-card__desc">HTML, CSS, JavaScript — создание современных сайтов и веб-приложений.</p>
+                    <ul class="course-card__list">
+                        <li>HTML / CSS</li>
+                        <li>JavaScript</li>
+                        <li>Портфолио</li>
+                    </ul>
+                    <div class="course-card__glow"></div>
+                </article>
+                <article class="course-card glass">
+                    <div class="course-card__age">10–17 лет</div>
+                    <h3 class="course-card__title">Графический<br>дизайн</h3>
+                    <p class="course-card__desc">Визуальная коммуникация, работа с цветом, типографика и digital-иллюстрация.</p>
+                    <ul class="course-card__list">
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                        <li>UI/UX</li>
+                    </ul>
+                    <div class="course-card__glow"></div>
+                </article>
+                <article class="course-card glass">
+                    <div class="course-card__age">10–17 лет</div>
+                    <h3 class="course-card__title">Видеоблогинг<br>и монтаж</h3>
+                    <p class="course-card__desc">Съёмка, сценарий, монтаж и продвижение контента в современных соцсетях.</p>
+                    <ul class="course-card__list">
+                        <li>Сценарий</li>
+                        <li>Монтаж</li>
+                        <li>Продвижение</li>
+                    </ul>
+                    <div class="course-card__glow"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Почему мы -->
+    <section class="section" id="why">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__tag">03 — Почему мы</span>
+                <h2 class="section__title">Результаты,<br>которые видно</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-item glass">
+                    <span class="why-item__num">01</span>
+                    <h3>Проектный подход</h3>
+                    <p>Ребёнок не просто учит теорию — он создаёт собственные проекты и защищает их.</p>
+                </div>
+                <div class="why-item glass">
+                    <span class="why-item__num">02</span>
+                    <h3>Малые группы</h3>
+                    <p>До 12 человек — внимание каждому ученику и комфортный темп обучения.</p>
+                </div>
+                <div class="why-item glass">
+                    <span class="why-item__num">03</span>
+                    <h3>Опытные преподаватели</h3>
+                    <p>Педагоги — практикующие IT-специалисты и выпускники ведущих вузов.</p>
+                </div>
+                <div class="why-item glass">
+                    <span class="why-item__num">04</span>
+                    <h3>Гибкий график</h3>
+                    <p>Занятия в будни и выходные. Выбирайте удобное время для ребёнка.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section section--contacts" id="contacts">
+        <div class="container">
+            <div class="contacts-wrap glass">
+                <div class="contacts-info">
+                    <span class="section__tag">04 — Контакты</span>
+                    <h2 class="section__title">Запишитесь<br>на пробный урок</h2>
+                    <p class="contacts-info__text">
+                        Оставьте заявку — мы свяжемся с вами, ответим на вопросы и подберём подходящий курс.
+                    </p>
+                    <ul class="contacts-list">
+                        <li>
+                            <span class="contacts-list__icon">📍</span>
+                            <div>
+                                <span class="contacts-list__label">Адрес</span>
+                                <span class="contacts-list__value">г. Грозный, ул. Умара Кадырова, 21</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contacts-list__icon">📞</span>
+                            <div>
+                                <span class="contacts-list__label">Телефон</span>
+                                <a href="tel:+79667222244" class="contacts-list__value contacts-list__link">+7 (966) 722-22-44</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contacts-list__icon">🌐</span>
+                            <div>
+                                <span class="contacts-list__label">Сайт</span>
+                                <a href="https://grozny.algoritmika.org" target="_blank" rel="noopener" class="contacts-list__value contacts-list__link">grozny.algoritmika.org</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contacts-list__icon">✉️</span>
+                            <div>
+                                <span class="contacts-list__label">Email</span>
+                                <a href="mailto:grozny@algoritmika.org" class="contacts-list__value contacts-list__link">grozny@algoritmika.org</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contacts-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя ребёнка</label>
+                        <input type="text" id="name" name="name" placeholder="Как зовут ребёнка?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон родителя</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Возраст ребёнка</label>
+                        <select id="age" name="age" required>
+                            <option value="" disabled selected>Выберите возраст</option>
+                            <option>6–7 лет</option>
+                            <option>7–9 лет</option>
+                            <option>10–12 лет</option>
+                            <option>13–17 лет</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Интересующий курс</label>
+                        <select id="course" name="course">
+                            <option value="" disabled selected>Выберите курс</option>
+                            <option>Основы логики и программирования</option>
+                            <option>Компьютерная грамотность</option>
+                            <option>Python-разработка</option>
+                            <option>Frontend-разработка</option>
+                            <option>Графический дизайн</option>
+                            <option>Видеоблогинг</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Отправить заявку</span>
+                        <span class="btn__arrow">→</span>
+                    </button>
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="logo__icon">◆</span>
+                <span class="logo__text">АЛГОРИТМИКА</span>
+                <p class="footer__tagline">Международная школа программирования для детей</p>
+            </div>
+            <div class="footer__links">
+                <a href="#about">О школе</a>
+                <a href="#courses">Курсы</a>
+                <a href="#why">Почему мы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <p class="footer__copy">© 2025 Алгоритмика Грозный. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
