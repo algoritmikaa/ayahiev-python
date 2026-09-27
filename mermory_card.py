@@ -1,7 +1,7 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QLabel,
                               QVBoxLayout, QMessageBox, QRadioButton,
-                                  QHBoxLayout, QGroupBox, QButtonGroup)
+                              QHBoxLayout, QGroupBox, QButtonGroup)
 
 
 from random import shuffle
@@ -45,23 +45,17 @@ def ask(question1, right_answer, wrong1, wrong2, wrong3):
 def show_correct(res):
     lb_result.setText(res)
     show_results()
-
-
-
+  
 def check_answer():
     if answers[0].isChecked():
         show_correct('Правда')
     elif answers[1].isChecked() or answers[2].isChecked() or answers[3].isChecked():
         show_correct('Неправда')
 
-
-
-
-
 app = QApplication([])
 main_win = QWidget()
-main_win.resize(500, 300)
-main_win.setWindowTitle('Mermory card')
+main_win.resize(600, 400)
+main_win.setWindowTitle('Карточки Для Запоминания') 
 
 
 card = QLabel('Вопрос')
